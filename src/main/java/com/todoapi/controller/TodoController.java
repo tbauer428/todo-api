@@ -1,4 +1,11 @@
-package main.java.com.todoapi.controller;
+package com.todoapi.controller;
 
+import com.todoapi.repository.TodoRepository;
+import lombok.extern.slf4j.Slf4j;
+import org.springframework.web.bind.annotation.RestController;
+
+@Slf4j
+@RestController
 public class TodoController {
+    TodoRepository todoRepository = new TodoRepository();
 }
