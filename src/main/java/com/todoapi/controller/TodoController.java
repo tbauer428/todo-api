@@ -41,9 +41,6 @@ public class TodoController {
         return todoRepository.updateById(id, updatedTodo);
     }
 
-
-
-
     @ResponseBody
     @ExceptionHandler(TodoNotFoundException.class)
     @ResponseStatus(HttpStatus.NOT_FOUND)
