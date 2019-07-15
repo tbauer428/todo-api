@@ -15,7 +15,7 @@ public class Todo {
     private boolean completed;
 
     public Todo(){
-        this.todoText = "New Todo";
+        this.todoText = "";
         this.completed = false;
         this.id = UUID.randomUUID().toString();
     }
